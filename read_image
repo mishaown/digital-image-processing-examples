@@ -1,0 +1,15 @@
+# Import OpenCV library
+import cv2 as cv
+
+# Importing image
+# Using flags to import the image as grayscale or in color
+img_color = cv.imread('photos/sample.JPG', flags=cv.IMREAD_ANYCOLOR)
+img_grey = cv.imread('photos/sample.JPG', flags=cv.IMREAD_GRAYSCALE)
+
+
+# Showing images
+cv.imshow('Color Image', img_color)
+cv.imshow('Grey Image', img_grey)
+
+cv.waitKey(0)
+cv.destroyAllWindows()
